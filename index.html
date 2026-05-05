@@ -97,7 +97,7 @@ nav{background:var(--cream);border-bottom:1px solid var(--line);padding:0 3rem;h
 .eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:1.1rem}
 .heading{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:300;line-height:1.18;margin-bottom:1.5rem;color:var(--text)}
 .heading em{font-style:italic}
-.body-copy{font-size:14px;line-height:1.95;color:var(--muted);font-weight:300}
+.body-copy{font-size:16px;line-height:2;color:#4a4038;font-weight:400;max-width:540px}
 
 /* STORY */
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
@@ -191,6 +191,7 @@ footer{background:var(--text);padding:2.5rem 2rem;text-align:center}
 
 /* RESPONSIVE */
 @media(max-width:700px){
+  .body-copy{font-size:15px;line-height:1.9;max-width:100%}
   nav{padding:0 1.25rem;grid-template-columns:auto 1fr}
   .nav-links{display:none}
   .hero-text{padding:2rem 1.5rem 3rem}
@@ -209,8 +210,13 @@ footer{background:var(--text);padding:2.5rem 2rem;text-align:center}
 
 <nav>
   <div class="nav-left">
-    <!-- EDIT: logo — replace span with: <img src="logo.png" alt="Hands Hearts & Home" style="height:36px"> -->
-    <span class="brand-name">Hands Hearts &amp; Home</span>
+    <!-- EDIT: logo — upload your logo file then replace LOGO. jpg.jpg with your filename -->
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="width:44px;height:44px;border:1.5px solid var(--line);border-radius:3px;overflow:hidden;flex-shrink:0">
+        <img src="LOGO. jpg.jpg" alt="Logo" style="width:100%;height:100%;object-fit:contain;padding:4px">
+      </div>
+      <span class="brand-name">Hands Hearts &amp; Home</span>
+    </div>
   </div>
   <div class="nav-links">
     <a href="#story">Our Story</a>
@@ -259,8 +265,8 @@ footer{background:var(--text);padding:2.5rem 2rem;text-align:center}
         <a href="#order" class="btn-clay">Shop Our Soaps</a>
       </div>
       <div style="padding-top:3.5rem">
-        <p class="body-copy" style="margin-bottom:1.25rem">Hands Hearts &amp; Home grew from something deeply personal — welcoming high-needs youth into our home and daily life. Soapmaking became a classroom.</p>
-        <p class="body-copy" style="margin-bottom:1.25rem">Measuring oils teaches precision. Waiting for trace teaches patience. Unmolding a bar teaches pride. Each step builds confidence that lasts long after the soap is gone.</p>
+        <p class="body-copy" style="margin-bottom:1.75rem">Hands Hearts &amp; Home grew from something deeply personal — welcoming high-needs youth into our home and daily life. Soapmaking became a classroom.</p>
+        <p class="body-copy" style="margin-bottom:1.75rem">Measuring oils teaches precision. Waiting for trace teaches patience. Unmolding a bar teaches pride. Each step builds confidence that lasts long after the soap is gone.</p>
         <p class="body-copy">Every bar you bring home was made with the hands of young people who needed a purpose — and found one. Mission-driven, honest ingredients, made the right way.</p>
       </div>
     </div>
